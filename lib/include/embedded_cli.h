@@ -304,6 +304,12 @@ uint16_t embeddedCliFindToken(const char *tokenizedStr, const char *token);
  */
 uint16_t embeddedCliGetTokenCount(const char *tokenizedStr);
 
+/**
+ * Enable or disable autocompletion.
+ * @param enable - true to enable, false to disable
+ */
+void embeddedCliSetAutocompletion(EmbeddedCli *cli, bool enable);
+
 #ifdef __cplusplus
 }
 #endif
